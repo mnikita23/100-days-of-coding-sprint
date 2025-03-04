@@ -33,7 +33,7 @@ Explanation
 We can clearly see a1 is black in the diagram.
 
 ## Code
-
+'''
 def chessboard(x):
 
   if (x[0] in 'aceg' and x[1] in '1357') or (x[0] in 'bdfh' and x[1] in '2468'):
@@ -45,3 +45,4 @@ def chessboard(x):
 x=input()
 
 print(chessboard(x))
+'''
