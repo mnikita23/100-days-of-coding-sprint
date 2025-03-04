@@ -24,6 +24,7 @@ If no such member is found, print “-1” instead.
 Testcase Input
 2 1
 1 2
+
 Testcase Output
 2
 ## Explanation
