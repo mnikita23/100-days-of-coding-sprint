@@ -1,0 +1,26 @@
+def find_flowers_indexes(N, t, a):
+    left, right = 0, N - 1
+    
+    while left < right:
+        sum_pair = a[left] + a[right]
+        if sum_pair == t:
+            return [left, right]  # Return indices as soon as pair is found
+        elif sum_pair < t:
+            left += 1
+        else:
+            right -= 1
+
+    return []  # Return empty list if no valid pair is found
+
+# Input reading
+N, t = map(int, input().split())  # Read N and target sum
+a = list(map(int, input().split()))  # Read array elements
+
+# Find result
+result = find_flowers_indexes(N, t, a)
+
+# Output result
+if result:
+    print(result[0], result[1])
+else:
+    print("No valid pair found")
